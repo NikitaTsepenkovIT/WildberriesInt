@@ -26,7 +26,8 @@ buttonCart.addEventListener('click', openModal);
 
 modalClose.addEventListener('click', closeModal);
 
-modalCart.addEventListener('click', (e) -> {
+
+modalCart.addEventListener('click', (e) => {
 	if (e.target.classList.contains('modal-close') || !e.target.closest('.modal')) {
 		closeModal();
 	}
